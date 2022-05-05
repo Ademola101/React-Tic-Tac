@@ -6,5 +6,6 @@ background-color: skyblue;
 height: 10px;
 width: 10px;
 border-radius: 50%;
-
+margin: auto;
+align-items: center;
 `
