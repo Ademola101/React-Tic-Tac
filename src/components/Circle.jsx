@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Circle = () => {
+const Circle = ({className}) => {
   return (
-    <div>
-      
+    <div className= {className}>
+     
     </div>
   );
 }

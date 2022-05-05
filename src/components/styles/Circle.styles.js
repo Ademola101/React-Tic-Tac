@@ -1,4 +1,10 @@
 import styled from "styled-components";
 import Circle from "../Circle";
 
-const CircleStyled = styled(Circle)
+export const CircleStyled = styled(Circle)`
+background-color: skyblue;
+height: 10px;
+width: 10px;
+border-radius: 50%;
+
+`
