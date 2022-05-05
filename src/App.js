@@ -1,8 +1,13 @@
-import logo from './logo.svg';
+
 import './App.css';
+import { PlayboxStyled } from './components/styles/Playbox.styles';
 
 function App() {
-  return ();
+  return (
+    <PlayboxStyled>
+      
+      </PlayboxStyled>
+  );
 }
 
 export default App;
