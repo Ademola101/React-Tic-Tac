@@ -1,7 +1,8 @@
 import styled from "styled-components";
+import Playbox from "../Playbox";
 
 
-export const PlayboxStyled = styled.div`
+export const PlayboxStyled = styled(Playbox)`
 display: flex;
 height: 50px;
 width: 60px;

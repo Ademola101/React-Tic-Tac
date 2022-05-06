@@ -3,65 +3,70 @@ import './App.css';
 import { PlayboxStyled } from './components/styles/Playbox.styles';
 import { CircleStyled } from './components/styles/Circle.styles';
 import { AppStyle } from './components/styles/App.style';
+import { useState } from 'react';
+
+
 
 function App() {
+
+  const [PlayState, SetPlayState] = useState("");
+
+  const changeState = () => {
+    SetPlayState('Played')
+    console.log(PlayState);
+  }
+  
   return ( <AppStyle>
 
-<PlayboxStyled>
+<PlayboxStyled as= 'playBox' onClick={changeState}>
 
     <CircleStyled>
 
     </CircleStyled>
       </PlayboxStyled>
-
-<PlayboxStyled>
-
-    <CircleStyled>
-
-    </CircleStyled>
-      </PlayboxStyled>
-
-<PlayboxStyled>
+<PlayboxStyled as= 'playBox' onClick={changeState}>
 
     <CircleStyled>
 
     </CircleStyled>
       </PlayboxStyled>
-
-<PlayboxStyled>
-
-    <CircleStyled>
-
-    </CircleStyled>
-      </PlayboxStyled>
-
-<PlayboxStyled>
+<PlayboxStyled as= 'Playbox' onClick={changeState}>
 
     <CircleStyled>
 
     </CircleStyled>
       </PlayboxStyled>
-
-<PlayboxStyled>
-
-    <CircleStyled>
-
-    </CircleStyled>
-      </PlayboxStyled>
-
-<PlayboxStyled>
+<PlayboxStyled as= 'Playbox' onClick={changeState}>
 
     <CircleStyled>
 
     </CircleStyled>
       </PlayboxStyled>
-<PlayboxStyled>
+<PlayboxStyled as= 'Playbox' onClick={changeState}>
 
     <CircleStyled>
 
     </CircleStyled>
       </PlayboxStyled>
-<PlayboxStyled>
+<PlayboxStyled as= 'Playbox' onClick={changeState}>
+
+    <CircleStyled>
+
+    </CircleStyled>
+      </PlayboxStyled>
+<PlayboxStyled as= 'playBox' onClick={changeState}>
+
+    <CircleStyled>
+
+    </CircleStyled>
+      </PlayboxStyled>
+<PlayboxStyled as= 'playBox' onClick={changeState}>
+
+    <CircleStyled>
+
+    </CircleStyled>
+      </PlayboxStyled>
+<PlayboxStyled as= 'playBox' onClick={changeState}>
 
     <CircleStyled>
 

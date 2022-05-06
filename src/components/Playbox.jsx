@@ -1,8 +1,8 @@
 
-const Playbox = ({className}) => {
+const Playbox = ({className, onClick}) => {
   return (
-    <div className= {className}>
-    </div>
+    <button onClick={onClick} className= {className}>
+    </button>
   );
 }
 
