@@ -4,6 +4,7 @@ import { PlayboxStyled } from './components/styles/Playbox.styles';
 import { CircleStyled } from './components/styles/Circle.styles';
 import { AppStyle } from './components/styles/App.style';
 import { useState } from 'react';
+import { Played } from './components/styles/Played.styles';
 
 
 
@@ -16,7 +17,11 @@ function App() {
     console.log(PlayState);
   }
   
-  return ( <AppStyle>
+  return ( 
+    
+    
+    <AppStyle>
+    
 
 <PlayboxStyled as= 'playBox' onClick={changeState}>
 
