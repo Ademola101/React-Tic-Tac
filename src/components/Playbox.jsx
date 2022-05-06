@@ -7,13 +7,12 @@ const Playbox = ({className, onClick}) => {
   
   return ( 
 
-    PlayState === 'Played' ?
-    <button onClick={onClick} className= {className}>
+    PlayState === 'Played' ? <div>
+    Played
+  </div>
+    :<button onClick={onClick} className= {className}>
     </button> 
-    : <div>
-      Played
-    </div>
-
+  
     
   );
 }

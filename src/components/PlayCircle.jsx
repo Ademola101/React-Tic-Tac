@@ -4,6 +4,7 @@ import { CircleStyled } from "./styles/Circle.styles";
 import React from 'react';
 import { useContext } from "react";
 import { gameContext } from "../Helper/Context";
+import Playbox from "./Playbox";
 
 const Playcircle = () => {
   const {SetPlayState,PlayState} = useContext(gameContext);
@@ -12,9 +13,11 @@ const Playcircle = () => {
     SetPlayState('Played')
     
   }
+
+  console.log(PlayState);
   return (
     <>
-<PlayboxStyled as= 'playBox' onClick={changeState}>
+<PlayboxStyled  onClick={changeState}>
 
 <CircleStyled>
 
