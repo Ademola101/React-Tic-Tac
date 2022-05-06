@@ -1,8 +1,20 @@
+import { useContext } from "react";
+import { gameContext } from "../Helper/Context";
+
 
 const Playbox = ({className, onClick}) => {
-  return (
+  const {PlayState} = useContext(gameContext)
+  
+  return ( 
+
+    PlayState === 'Played' ?
     <button onClick={onClick} className= {className}>
-    </button>
+    </button> 
+    : <div>
+      Played
+    </div>
+
+    
   );
 }
 
