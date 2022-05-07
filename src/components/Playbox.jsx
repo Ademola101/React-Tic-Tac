@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { gameContext } from "../Helper/Context";
+import { Cond } from "./styles/cond.styles";
 
 
 const Playbox = ({className, onClick}) => {
@@ -7,11 +8,11 @@ const Playbox = ({className, onClick}) => {
   
   return ( 
 
-    PlayState === 'Played' ? <div>
+    PlayState === 'Played' ? <Cond >
     Played
-  </div>
-    :<button onClick={onClick} className= {className}>
-    </button> 
+  </Cond>
+    :<div onClick={onClick} className= {className}>
+    </div> 
   
     
   );

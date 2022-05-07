@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export  const Played = styled.button`
+export  const Played = styled.div`
 
 display: flex;
 height: 50px;

@@ -17,12 +17,12 @@ const Playcircle = () => {
   console.log(PlayState);
   return (
     <>
-<PlayboxStyled  onClick={changeState}>
+<PlayboxStyled as= {Playbox} onClick={changeState}>
 
-<CircleStyled>
+<CircleStyled >
 
 </CircleStyled>
-  </PlayboxStyled>
+</PlayboxStyled>  
 <PlayboxStyled as= 'playBox' onClick={changeState}>
 
 <CircleStyled>

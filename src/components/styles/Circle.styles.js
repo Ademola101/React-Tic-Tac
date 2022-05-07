@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import Circle from "../Circle";
 
-export const CircleStyled = styled(Circle)`
+export const CircleStyled = styled.div`
 background-color: skyblue;
 height: 10px;
 width: 10px;
