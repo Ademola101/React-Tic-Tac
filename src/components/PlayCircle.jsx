@@ -10,11 +10,12 @@ const Playcircle = () => {
   const {SetPlayState,PlayState} = useContext(gameContext);
 
   const changeState = () => {
-    SetPlayState('Played')
+    SetPlayState(PlayState[0])
     
   }
+  
 
-  console.log(PlayState);
+  
   return (
     <>
 <PlayboxStyled as= {Playbox} onClick={changeState}>

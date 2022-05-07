@@ -9,8 +9,8 @@ import Playcircle from './components/PlayCircle';
 
 function App() {
 
-  const [PlayState, SetPlayState] = useState("");
-  console.log(PlayState);
+  const [PlayState, SetPlayState] = useState(["X","Y"]);
+  
   
   
   return ( 

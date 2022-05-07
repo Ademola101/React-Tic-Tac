@@ -3,13 +3,13 @@ import { gameContext } from "../Helper/Context";
 import { Cond } from "./styles/cond.styles";
 
 
-const Playbox = ({className, onClick}) => {
+const Playbox = ({className, onClick,text}) => {
   const {PlayState} = useContext(gameContext)
   
   return ( 
 
-    PlayState === 'Played' ? <Cond >
-    Played
+    PlayState === 'X' ? <Cond >
+    {PlayState}
   </Cond>
     :<div onClick={onClick} className= {className}>
     </div> 
