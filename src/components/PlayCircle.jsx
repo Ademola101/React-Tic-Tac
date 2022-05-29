@@ -10,10 +10,21 @@ const Playcircle = () => {
   const {SetPlayState,PlayState} = useContext(gameContext);
 
   const changeState = () => {
-    SetPlayState(PlayState[0])
+    if (PlayState.PlayerX === "X"){
+      var newState =  {
+      ...PlayState, PlayerX: "Y"
+   }
+     }
+
+     else if (PlayState.PlayerY === "Y") {
+      var newState =  {
+        ...PlayState, PlayerY: "X"
+     
+    }}
+
     
-  }
-  
+    SetPlayState(newState)
+  };
 
   
   return (
@@ -78,5 +89,3 @@ const Playcircle = () => {
 }
 
 export default Playcircle;
-
-

@@ -9,7 +9,10 @@ import Playcircle from './components/PlayCircle';
 
 function App() {
 
-  const [PlayState, SetPlayState] = useState(["X","Y"]);
+  const [PlayState, SetPlayState] = useState({
+    PlayerX: "X",
+    PlayerY: "Y"
+  });
   
   
   
